@@ -1,5 +1,156 @@
+.container {
+  padding-left: 20px;
+}
+
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  height: 60px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 88px;
+    justify-content: center;
+  }
+}
+
+.navigation__icons {
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation {
+  &__icon-link {
+    display: block;
+    padding: 22px;
+  }
+}
+
+.logo__m {
+  display: none;
+}
+.logo__l {
+  display: none;
+}
+
+.logo__text {
+  display: none;
+}
+
+.navigation__menu-list {
+  display: none;
+}
+
+.icon-link__text {
+  display: none;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .logo {
+    &__s {
+      display: none;
+    }
+    &__m {
+      display: block;
+    }
+    &__l {
+      display: none;
+    }
+  }
+
+  .header {
+    height: 80px;
+    &__navigation {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+    &__inner {
+      gap: 67px;
+      box-sizing: border-box;
+      justify-content: space-between;
+    }
+  }
+
+  .navigation {
+    &__icon--hidden {
+      display: none;
+    }
+    &__icon-link {
+      padding: 30px 22px;
+    }
+    &__menu-list {
+      display: flex;
+      list-style-type: none;
+    }
+    // &__menu-item {
+    //   padding: 32px 0;
+    // }
+
+    &__link {
+      display: block;
+      padding: 31px 20px;
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px; /* 133.333% */
+      letter-spacing: 0.24px;
+      text-transform: uppercase;
+      color: $black;
+    }
+    &__link--active {
+      color: $primary;
+      border-bottom: 2px solid $primary;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .header__inner {
+    max-width: 1360px;
+    justify-content: space-between;
+  }
+  .header__navigation {
+    gap: 162px;
+  }
+
+  .navigation {
+    &__menu-list {
+      gap: 20px;
+    }
+    &__icon-link {
+      display: flex;
+      gap: 8px;
+    }
+  }
+  .logo {
+    &__m {
+      display: none;
+    }
+    &__l {
+      display: flex;
+      gap: 20px;
+    }
+    &__text {
+      display: block;
+      color: $black;
+      font-size: 12px;
+      line-height: 16px; /* 133.333% */
+      width: 126px;
+    }
+  }
+  .icon-link__text {
+    display: block;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    color: $black;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
 }

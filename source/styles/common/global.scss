@@ -1,1 +1,17 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page__body {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+}
