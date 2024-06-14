@@ -52,6 +52,7 @@
     }
     &__m {
       display: block;
+      margin-top: 4px;
     }
     &__l {
       display: none;
@@ -86,7 +87,7 @@
 
     &__link {
       display: block;
-      padding: 31px 20px;
+      padding: 33px 20px 29px 20px;
       font-family: "Montserrat";
       font-weight: 500;
       font-size: 12px;

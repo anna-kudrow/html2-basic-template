@@ -35,3 +35,56 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: 768px) {
+  .features {
+    &__container {
+      padding: 56px 30px 80px;
+    }
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    &__bigger-title {
+      font-size: 42px;
+      line-height: 64px;
+      margin-bottom: 60px;
+    }
+  }
+  .feature {
+    display: flex;
+    gap: 20px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 10px;
+      text-align: start;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: start;
+      width: 267px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .features {
+    &__container {
+      padding: 100px 40px 120px;
+    }
+    &__list {
+      flex-direction: row;
+      // flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+  .feature {
+    display: flex;
+    gap: 20px;
+  }
+}
