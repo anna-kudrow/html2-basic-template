@@ -119,6 +119,9 @@
   }
 
   .navigation {
+    &__icons {
+      gap: 14px;
+    }
     &__menu-list {
       gap: 20px;
     }

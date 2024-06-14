@@ -55,6 +55,16 @@
           />
         </symbol>
       </symbol>
+      <symbol
+        id="slider-step"
+        xmlns="http://www.w3.org/2000/svg"
+        width="62"
+        height="24"
+        viewBox="0 0 62 24"
+        fill="none"
+      >
+        <rect y="10" width="62" height="4" fill="white" />
+      </symbol>
     </svg>
     <header class="header">
       <div class="container">
@@ -127,34 +137,52 @@
     <main class="main">
       <div class="promo">
         <div class="promo__container">
-          <picture class="promo__picture">
-            <source
-              media="(min-width:1440px)"
-              srcset="/images/flatwhite-l@2x.webp"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:768px)"
-              srcset="/images/flatwhite-m@2x.webp"
-              type="image/webp"
-            />
-            <img src="images/flatwhite-s@2x.webp" alt="flat white" />
-          </picture>
-          <div class="promo__info">
-            <p class="promo__text">Новинка!</p>
-            <h1 class="promo__title">Декаф Флэт Уайт</h1>
-            <p class="promo__description">
-              Свежесваренный кофе без кофеина из Эфиопии <br class="br" />
-              с натуральным фермерским молоком — то, что нужно <br class="br" />
-              для расслабления после тяжёлого рабочего дня
-            </p>
-            <div class="promo__order">
-              <div class="promo__price">
-                <p class="price-old">295₽</p>
-                <p class="price-current">225₽</p>
+          <div class="promo__inner">
+            <picture class="promo__picture">
+              <source
+                media="(min-width:1440px)"
+                srcset="/images/flatwhite-l@2x.webp"
+                type="image/webp"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/images/flatwhite-m@2x.webp"
+                type="image/webp"
+              />
+              <img src="images/flatwhite-s@2x.webp" alt="flat white" />
+            </picture>
+            <div class="promo__info">
+              <p class="promo__text">Новинка!</p>
+              <h1 class="promo__title">Декаф Флэт Уайт</h1>
+              <p class="promo__description">
+                Свежесваренный кофе без кофеина из Эфиопии <br class="br" />
+                с натуральным фермерским молоком — то, что нужно
+                <br class="br" />
+                для расслабления после тяжёлого рабочего дня
+              </p>
+              <div class="promo__order">
+                <div class="promo__price">
+                  <p class="price-old">295₽</p>
+                  <p class="price-current">225₽</p>
+                </div>
+                <button class="order__button" type="submit">Заказать</button>
               </div>
-              <button class="order__button" type="submit">Заказать</button>
             </div>
+          </div>
+          <div class="promo__slider-steps">
+            <svg
+              class="promo__slider-step promo__slider-step--active"
+              width="62"
+              height="4"
+            >
+              <use href="#slider-step"></use>
+            </svg>
+            <svg class="promo__slider-step" width="62" height="4">
+              <use href="#slider-step"></use>
+            </svg>
+            <svg class="promo__slider-step" width="62" height="4">
+              <use href="#slider-step"></use>
+            </svg>
           </div>
         </div>
       </div>
