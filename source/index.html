@@ -277,6 +277,21 @@
         <rect width="42" height="24" rx="12" fill="#E2E2E2" />
         <circle cx="12" cy="12" r="10" fill="white" />
       </symbol>
+      <symbol
+        id="summary-arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        width="10"
+        height="6"
+        viewBox="0 0 10 6"
+        fill="none"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 1.19153L1.23899 0L5 3.61694L8.76101 0L10 1.19153L5 6L0 1.19153Z"
+          fill="#7859CF"
+        />
+      </symbol>
     </svg>
     <header class="header">
       <div class="header__container">
@@ -577,16 +592,22 @@
                 </div>
               </div>
               <div class="catalog__buttons">
-                <button class="button__confirm" type="button">Применить</button>
-                <button class="button__reset" type="reset">Сбросить</button>
+                <button class="catalog__button button__accent" type="button">
+                  Применить
+                </button>
+                <button class="catalog__button button__non-accent" type="reset">
+                  Сбросить
+                </button>
               </div>
               <div class="catalog__sort">
+                <h4 class="catalog__title smallest-title">Сортировка:</h4>
                 <details class="sort__details">
                   <summary class="sort__summary">
-                    <h4 class="catalog__title smallest-title">Сортировка:</h4>
                     <p class="summary__text">по умолчанию</p>
+                    <svg width="10" height="6">
+                      <use href="#summary-arrow"></use>
+                    </svg>
                   </summary>
-                  <p>по цене</p>
                 </details>
               </div>
             </div>

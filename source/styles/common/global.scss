@@ -47,3 +47,13 @@ a {
   line-height: 24px;
   margin-bottom: 20px;
 }
+
+.button__accent {
+  color: $white;
+  background-color: $primary;
+}
+
+.button__non-accent {
+  color: $primary;
+  background-color: $white;
+}
