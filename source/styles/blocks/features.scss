@@ -79,12 +79,28 @@
     }
     &__list {
       flex-direction: row;
-      // flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 30px;
+    }
+    &__bigger-title {
+      margin-bottom: 80px;
     }
   }
   .feature {
     display: flex;
     gap: 20px;
+    flex-direction: column;
+    &__title {
+      text-align: center;
+      //
+    }
+    &__text {
+      width: 318px;
+      text-align: center;
+    }
+
+    &__img {
+      margin-bottom: 0;
+    }
   }
 }
