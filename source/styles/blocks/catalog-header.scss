@@ -18,6 +18,9 @@
   &__price {
     margin-bottom: 30px;
   }
+  &__country {
+    margin-bottom: 30px;
+  }
   &__price-windows {
     display: flex;
     gap: 18px;
@@ -55,5 +58,19 @@
   }
   &__item--not-available {
     color: $light-gray-text;
+  }
+}
+
+.country-toggle {
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 }

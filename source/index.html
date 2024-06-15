@@ -244,6 +244,39 @@
           stroke-width="2"
         />
       </symbol>
+      <symbol
+        id="toggle-active"
+        xmlns="http://www.w3.org/2000/svg"
+        width="42"
+        height="24"
+        viewBox="0 0 42 24"
+        fill="none"
+      >
+        <rect width="42" height="24" rx="12" fill="#7859CF" />
+        <circle cx="30" cy="12" r="10" fill="white" />
+      </symbol>
+      <symbol
+        id="toggle-inactive"
+        xmlns="http://www.w3.org/2000/svg"
+        width="42"
+        height="24"
+        viewBox="0 0 42 24"
+        fill="none"
+      >
+        <rect width="42" height="24" rx="12" fill="#BDBDBD" />
+        <circle cx="12" cy="12" r="10" fill="white" />
+      </symbol>
+      <symbol
+        id="toggle-unavailable"
+        xmlns="http://www.w3.org/2000/svg"
+        width="42"
+        height="24"
+        viewBox="0 0 42 24"
+        fill="none"
+      >
+        <rect width="42" height="24" rx="12" fill="#E2E2E2" />
+        <circle cx="12" cy="12" r="10" fill="white" />
+      </symbol>
     </svg>
     <header class="header">
       <div class="header__container">
@@ -466,6 +499,7 @@
                         >
                           <use href="#radio-active"></use>
                         </svg>
+
                         Неважно
                       </li>
                       <li class="milk-radio__item">
@@ -510,14 +544,32 @@
                       <li
                         class="country-toggle__item country-toggle__item--active"
                       >
+                        <svg width="42" height="24">
+                          <use href="#toggle-active"></use>
+                        </svg>
                         Бразилия
                       </li>
-                      <li class="country-toggle__item">Эфиопия</li>
-                      <li class="country-toggle__item">Колумбия</li>
-                      <li class="country-toggle__item">Коста-Рика</li>
+                      <li class="country-toggle__item">
+                        <svg width="42" height="24">
+                          <use href="#toggle-inactive"></use></svg
+                        >Эфиопия
+                      </li>
+                      <li class="country-toggle__item">
+                        <svg width="42" height="24">
+                          <use href="#toggle-inactive"></use></svg
+                        >Колумбия
+                      </li>
+                      <li class="country-toggle__item">
+                        <svg width="42" height="24">
+                          <use href="#toggle-inactive"></use></svg
+                        >Коста-Рика
+                      </li>
                       <li
                         class="country-toggle__item country-toggle__item--not-available"
                       >
+                        <svg width="42" height="24">
+                          <use href="#toggle-unavailable"></use>
+                        </svg>
                         Перу
                       </li>
                     </ul>
