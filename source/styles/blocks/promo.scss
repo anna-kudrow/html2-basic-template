@@ -2,11 +2,11 @@
   background-color: $latte;
   width: 100%;
 
-  &__inner {
+  &__slider {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 10px;
   }
 
   &__container {
@@ -126,7 +126,7 @@
       padding: 30px 80px 60px 105px;
     }
 
-    &__inner {
+    &__slider {
       flex-direction: row;
       gap: 30px;
     }

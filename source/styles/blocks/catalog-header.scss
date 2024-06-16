@@ -34,6 +34,7 @@
     display: flex;
     gap: 18px;
     margin-left: 4px;
+    // margin-bottom: 16px;
   }
   &__filtres {
     margin-bottom: 30px;
@@ -175,15 +176,40 @@
 }
 
 @media (min-width: 1440px) {
-  .catalog__filtres {
-    flex-direction: column;
+  .catalog {
+    &__filtres {
+      flex-direction: column;
+    }
+    &__button.button__non-accent {
+      width: 149px;
+    }
+    &__button.button__accent {
+      width: 149px;
+    }
   }
+
   .filter {
     &__range-strip-desktop {
       display: initial;
+      margin-bottom: 18px;
     }
     &__range-strip-tablet {
       display: none;
     }
+    &__price-windows {
+      gap: 21px;
+    }
+    &__price {
+      margin: 0;
+    }
+    &__milk {
+      margin: 0;
+    }
+    &__country {
+      margin: 0;
+    }
+  }
+  .price-window {
+    width: 134px;
   }
 }
