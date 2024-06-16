@@ -363,7 +363,7 @@
         />
       </symbol>
       <symbol
-        id="slider-right"
+        id="slider-next"
         xmlns="http://www.w3.org/2000/svg"
         width="11"
         height="20"
@@ -378,7 +378,7 @@
         />
       </symbol>
       <symbol
-        id="slider-left"
+        id="slider-prev"
         xmlns="http://www.w3.org/2000/svg"
         width="11"
         height="20"
@@ -465,6 +465,12 @@
       <div class="promo">
         <div class="promo__container">
           <div class="promo__slider">
+            <button class="slider__button button-prev" type="button">
+              <svg width="11" height="20"><use href="#slider-prev"></use></svg>
+            </button>
+            <button class="slider__button button-next" type="button">
+              <svg width="11" height="20"><use href="#slider-next"></use></svg>
+            </button>
             <picture class="promo__picture">
               <source
                 media="(min-width:1440px)"

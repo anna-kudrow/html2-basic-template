@@ -6,11 +6,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
   }
 
   &__container {
     padding: 20px 20px 60px 20px;
+    position: relative;
   }
 
   &__text {
@@ -82,6 +83,21 @@
   border: transparent;
 }
 
+.slider__button {
+  position: absolute;
+  background: none;
+  border: none;
+}
+
+.button-prev {
+  top: 318px;
+  left: 4px;
+}
+.button-next {
+  top: 318px;
+  right: 4px;
+}
+
 @media (min-width: 768px) and (max-width: 1439px) {
   .promo {
     &__container {
@@ -96,6 +112,14 @@
     &__order {
       margin-bottom: 10px;
     }
+  }
+  .button-prev {
+    top: 310px;
+    left: 34px;
+  }
+  .button-next {
+    top: 310px;
+    right: 34px;
   }
 }
 
@@ -163,5 +187,13 @@
     &__slider-step--active {
       background-color: $primary;
     }
+  }
+  .button-prev {
+    top: 347px;
+    left: 34px;
+  }
+  .button-next {
+    top: 347px;
+    right: 34px;
   }
 }

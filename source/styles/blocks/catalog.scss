@@ -101,13 +101,15 @@
   .catalog {
     &__conteiner {
       padding: 100px 40px 120px;
-      position: relative;
+      // position: relative;
     }
     &__inner {
       display: grid;
-      grid-template-columns: 318px 1111px;
-      margin: unset;
+      grid-template-columns: 318px auto;
       gap: 30px;
+      position: relative;
+      margin: 0 auto;
+      max-width: 1450px;
     }
     &__bigger-title {
       margin-bottom: 40px;
@@ -126,9 +128,13 @@
 
     &__sort {
       position: absolute;
-      top: 225px;
-      right: 41px;
+      // top: 225px;
+      right: 1px;
+      top: 0;
     }
+    // &__filtres {
+    //   position: relative;
+    // }
   }
 
   .product {
