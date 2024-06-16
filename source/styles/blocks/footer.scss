@@ -1,8 +1,14 @@
 .footer {
+  &__container {
+    padding: 15px 20px 30px;
+    border-bottom: 1px solid $ligth-purple;
+  }
   &__links-info {
     display: flex;
     gap: 38px;
+    align-items: center;
   }
+
   &__links-list {
     list-style-type: none;
     display: flex;
@@ -12,4 +18,33 @@
 .link-item__link {
   display: block;
   padding: 10px;
+}
+.footer__links-info:after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  border-bottom: 1px solid $ligth-purple;
+  left: -9px;
+  top: 0px;
+}
+.info {
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    text-align: start;
+    color: $primary;
+  }
+  &-list {
+    list-style-type: none;
+  }
+  &-link {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    color: $black;
+  }
 }
