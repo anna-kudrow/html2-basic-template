@@ -4,6 +4,7 @@
 
 .header {
   height: 60px;
+
   &__inner {
     display: flex;
     align-items: center;
@@ -22,12 +23,18 @@
     background: none;
     border: transparent;
     padding: 22px;
+    height: 60px;
   }
+}
+.logo__link {
+  width: 32px;
+  height: 36px;
 }
 
 .logo__m {
   display: none;
 }
+
 .logo__l {
   display: none;
 }
@@ -38,23 +45,28 @@
 
 .navigation__menu-list {
   display: none;
+  height: 100%;
 }
 
 .icon-link__text {
   display: none;
 }
+
 @media (min-width: 768px) {
   .header__container {
     padding: 0 20px;
   }
+
   .logo {
     &__s {
       display: none;
     }
+
     &__m {
       display: block;
       margin-top: 4px;
     }
+
     &__l {
       display: none;
     }
@@ -62,11 +74,13 @@
 
   .header {
     height: 80px;
+
     &__navigation {
       display: flex;
       align-items: center;
       gap: 60px;
     }
+
     &__inner {
       gap: 67px;
       box-sizing: border-box;
@@ -78,9 +92,12 @@
     &__icon--hidden {
       display: none;
     }
+
     &__icon-link {
       padding: 30px 22px;
+      height: 80px;
     }
+
     &__menu-list {
       display: flex;
       list-style-type: none;
@@ -88,7 +105,7 @@
 
     &__link {
       display: block;
-      padding: 33px 20px 29px 20px;
+      padding: 33px 20px 29px;
       font-family: "Montserrat";
       font-weight: 500;
       font-size: 12px;
@@ -97,6 +114,7 @@
       text-transform: uppercase;
       color: $black;
     }
+
     &__link--active {
       color: $primary;
       border-bottom: 2px solid $primary;
@@ -113,6 +131,7 @@
     max-width: 1360px;
     justify-content: space-between;
   }
+
   .header__navigation {
     gap: 162px;
   }
@@ -121,37 +140,43 @@
     &__icons {
       gap: 14px;
     }
+
     &__menu-list {
       gap: 20px;
     }
+
     &__icon-link {
       display: flex;
       gap: 8px;
     }
   }
+
   .logo {
     &__m {
       display: none;
     }
+
     &__l {
       display: flex;
       gap: 20px;
     }
+
     &__text {
       display: block;
       color: $black;
       font-size: 12px;
-      line-height: 16px; /* 133.333% */
+      line-height: 16px;
       width: 126px;
     }
   }
+
   .icon-link__text {
     display: block;
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 12px;
     color: $black;
-    line-height: 16px; /* 133.333% */
+    line-height: 16px;
     letter-spacing: 0.24px;
     text-transform: uppercase;
   }

@@ -2,12 +2,15 @@
   &__container {
     padding: 50px 20px 60px;
   }
+
   &__small-title {
     margin-bottom: 4px;
   }
+
   &__bigger-title {
     margin-bottom: 36px;
   }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -21,14 +24,17 @@
     font-size: 14px;
     line-height: 20px;
   }
+
   &__img {
     justify-content: center;
     display: flex;
     margin-bottom: 10px;
   }
+
   &__title {
     margin-bottom: 4px;
   }
+
   &__text {
     text-align: center;
     font-size: 14px;
@@ -41,18 +47,21 @@
     &__container {
       padding: 55px 30px 80px;
     }
+
     &__list {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
       row-gap: 32px;
     }
+
     &__bigger-title {
       font-size: 42px;
       line-height: 64px;
       margin-bottom: 60px;
     }
   }
+
   .feature {
     display: flex;
     gap: 20px;
@@ -63,6 +72,7 @@
       margin-bottom: 10px;
       text-align: start;
     }
+
     &__text {
       font-size: 16px;
       line-height: 24px;
@@ -71,15 +81,19 @@
       margin-bottom: 20px;
     }
   }
+
   .energy-icon {
     padding: 0 5px;
   }
+
   .clock-icon {
     padding: 4px 1px 0;
   }
+
   .leaf-icon {
     padding: 3px 1px 0;
   }
+
   .pocket-icon {
     margin: 1px -2px;
   }
@@ -90,23 +104,29 @@
     &__container {
       padding: 97px 40px 120px;
     }
+
     &__list {
       display: flex;
       flex-direction: row;
+      flex-flow: wrap;
       flex-wrap: nowrap;
       gap: 30px;
     }
+
     &__bigger-title {
       margin-bottom: 80px;
     }
   }
+
   .feature {
     display: flex;
     gap: 20px;
     flex-direction: column;
+
     &__title {
       text-align: center;
     }
+
     &__text {
       width: 318px;
       text-align: center;

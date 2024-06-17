@@ -1,10 +1,10 @@
 .footer {
   &__container {
     padding: 15px 20px 0px;
-    border-bottom: 1px solid $ligth-purple;
     max-width: 330px;
     margin: 0 auto;
   }
+
   &__links-info {
     display: flex;
     gap: 38px;
@@ -18,13 +18,16 @@
     display: flex;
     gap: 19px;
   }
+
   &__logo-tablet {
     display: none;
   }
+
   &__logo-text {
     display: none;
   }
 }
+
 .link-item__link {
   display: block;
   padding: 10px;
@@ -40,12 +43,14 @@
     color: $primary;
     margin-bottom: 12px;
   }
+
   &-list {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 4px;
   }
+
   &-link {
     font-size: 12px;
     font-weight: 500;
@@ -56,6 +61,7 @@
     display: block;
     padding: 8px 0;
   }
+
   &__shop {
     padding: 15px 0;
     position: relative;
@@ -75,19 +81,23 @@
     display: flex;
     gap: 6px;
   }
+
   &__contacts-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
+
   &__title-contacts {
     margin-top: -1px;
     margin-bottom: 20px;
   }
 }
+
 .contact-svg {
   margin-top: 2px;
 }
+
 .contact-item__address {
   width: 261px;
   font-size: 14px;
@@ -95,17 +105,19 @@
   font-weight: 400;
   line-height: 20px;
 }
+
 .academy-link {
   &__container {
     padding: 25px 0 30px;
   }
+
   &__link {
-    display: block;
     display: flex;
     gap: 4px;
     align-items: center;
     justify-content: center;
   }
+
   &__text {
     font-family: "Montserrat";
     font-size: 12px;
@@ -123,20 +135,25 @@
       margin: 0 auto;
       padding-top: 32px;
     }
+
     &__logo-mobile {
       display: none;
     }
+
     &__logo-tablet {
       display: block;
       width: 170px;
       height: 36px;
     }
+
     &__links-info {
       justify-content: space-between;
     }
+
     &__link-item {
       padding-top: 3px;
     }
+
     &__info {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -144,17 +161,21 @@
       padding-top: 5px;
     }
   }
+
   .info {
     &__shop {
       padding: 0;
     }
+
     &__media {
       padding: 0;
     }
+
     &__contacts {
       padding: 1px 0 0;
     }
   }
+
   .contact-item__address {
     width: 204px;
   }
@@ -163,6 +184,7 @@
     padding: 30px 0 40px;
   }
 }
+
 @media (min-width: 1440px) {
   .footer {
     &__container {
@@ -170,29 +192,35 @@
       margin: 0 auto;
       padding: 36px 40px 0;
     }
+
     &__inner {
       display: flex;
       gap: 63px;
     }
+
     &__links-info {
       flex-direction: column;
       gap: 47px;
       align-items: start;
     }
+
     &__logo-text {
       display: block;
       font-size: 14px;
       line-height: 20px;
       color: $black;
     }
+
     &__logo-tablet {
       margin-bottom: 10px;
     }
+
     &__info {
       padding-top: 9px;
       gap: 63px;
     }
   }
+
   .contact-item__address {
     width: 265px;
   }
@@ -200,6 +228,7 @@
   .info__contacts {
     padding-top: 2px;
   }
+
   .academy-link__container {
     padding-top: 19px;
   }

@@ -2,13 +2,15 @@
   &__inner {
     padding-bottom: 40px;
   }
+
   &__products {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+
   &__product {
-    background-color: white;
+    background-color: $white;
     padding: 39px 0 21px;
     width: 280px;
     height: 360px;
@@ -21,18 +23,21 @@
     margin: 0 auto;
     display: flex;
   }
+
   &__pagination {
     display: flex;
     gap: 20px;
     justify-content: center;
   }
 }
+
 .pagination {
   &__list {
     display: flex;
     list-style-type: none;
     gap: 20px;
   }
+
   &__item {
     text-align: center;
     font-size: 16px;
@@ -46,11 +51,13 @@
     display: flex;
     justify-content: center;
   }
+
   &__item--current {
     background: none;
     font-weight: 600;
     color: $black;
   }
+
   &__button {
     border: transparent;
     background-color: $white;
@@ -61,6 +68,7 @@
     display: flex;
     justify-content: center;
   }
+
   &__text {
     display: none;
   }
@@ -70,12 +78,14 @@
   &__info {
     padding: 0 20px;
   }
+
   &__text {
     width: 235px;
     margin-bottom: 16px;
     font-size: 14px;
     line-height: 20px;
   }
+
   &__name {
     margin-bottom: 5px;
     font-size: 18px;
@@ -89,11 +99,13 @@
     justify-content: space-between;
     align-items: center;
   }
+
   &__price {
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;
   }
+
   &__buy-button {
     display: flex;
     gap: 6px;
@@ -111,9 +123,11 @@
   width: 100%;
   height: 420px;
 }
+
 .map-tablet {
   display: none;
 }
+
 .map-desktop {
   display: none;
 }
@@ -123,21 +137,27 @@
     &__inner {
       padding-bottom: 70px;
     }
+
     &__products {
+      flex-flow: wrap;
       flex-direction: row;
       flex-wrap: wrap;
       gap: 30px;
     }
+
     &__product {
       width: 349px;
       padding: 50px 0 30px;
     }
+
     &__picture {
       padding-bottom: 30px;
     }
+
     &__sort {
       margin-bottom: 10px;
     }
+
     &__pagination {
       justify-content: end;
     }
@@ -147,10 +167,12 @@
     &__icot-tablet {
       display: none;
     }
+
     &__button {
       width: unset;
       padding: 0 20px;
     }
+
     &__text {
       display: initial;
       color: $primary;
@@ -165,11 +187,13 @@
     &__info {
       padding: 0 30px;
     }
+
     &__name {
       font-size: 24px;
       line-height: 36px;
       padding-bottom: 5px;
     }
+
     &__text {
       margin-bottom: 20px;
       width: 289px;
@@ -178,11 +202,13 @@
   .map-mobile {
     display: none;
   }
+
   .map-tablet {
     display: initial;
     width: 100%;
     height: 480px;
   }
+
   .map-desktop {
     display: none;
   }
@@ -193,10 +219,12 @@
     &__inner {
       padding-bottom: 60px;
     }
+
     &__conteiner {
       padding: 100px 40px 120px;
       // position: relative;
     }
+
     &__inner {
       display: grid;
       grid-template-columns: 318px auto;
@@ -205,17 +233,21 @@
       margin: 0 auto;
       max-width: 1450px;
     }
+
     &__bigger-title {
       margin-bottom: 40px;
     }
+
     &__products {
       margin-top: 54px;
     }
+
     &__product {
       width: 317px;
       margin: 0;
       padding-bottom: 50px;
     }
+
     &__product:hover {
       box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
     }
@@ -232,12 +264,15 @@
       width: 257px;
     }
   }
+
   .map-mobile {
     display: none;
   }
+
   .map-tablet {
     display: none;
   }
+
   .map-desktop {
     display: initial;
     width: 100%;

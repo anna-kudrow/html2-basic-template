@@ -10,13 +10,14 @@
   }
 
   &__container {
-    padding: 20px 20px 60px 20px;
+    padding: 20px 20px 60px;
     position: relative;
   }
 
   &__text {
     margin-bottom: 4px;
   }
+
   &__title {
     text-align: center;
     font-family: "Montserrat";
@@ -26,12 +27,14 @@
     letter-spacing: 0.72px;
     margin-bottom: 10px;
   }
+
   &__description {
     text-align: center;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 20px;
   }
+
   &__order {
     display: flex;
     gap: 20px;
@@ -48,6 +51,7 @@
     display: none;
   }
 }
+
 .price {
   &-old {
     color: $primary;
@@ -57,6 +61,7 @@
     line-height: 32px;
     text-decoration: line-through;
   }
+
   &-current {
     color: $black;
     font-family: "Montserrat";
@@ -104,6 +109,7 @@
       padding: 60px 80px 0px;
       background: linear-gradient(to bottom, $latte 77%, $white 50%);
     }
+
     &__picture {
       order: 2;
     }
@@ -111,14 +117,17 @@
     &__order {
       margin-bottom: 10px;
     }
+
     &__slider {
       gap: 10px;
     }
   }
+
   .button-prev {
     top: 310px;
     left: 34px;
   }
+
   .button-next {
     top: 310px;
     right: 34px;
@@ -129,6 +138,7 @@
   .br {
     display: initial;
   }
+
   .promo {
     &__title {
       font-size: 56px;
@@ -147,6 +157,7 @@
 @media (min-width: 1440px) {
   .promo {
     height: 714px;
+
     &__container {
       background-color: $latte;
       padding: 30px 80px 60px 105px;
@@ -160,12 +171,15 @@
     &__info {
       margin-top: -10px;
     }
+
     &__text {
       text-align: start;
     }
+
     &__title {
       text-align: start;
     }
+
     &__description {
       text-align: start;
       width: 570px;
@@ -175,6 +189,7 @@
     &__order {
       justify-content: start;
     }
+
     &__slider-steps {
       display: flex;
       justify-content: center;
@@ -182,6 +197,7 @@
       margin-left: -25px;
       margin-top: 6px;
     }
+
     &__slider-step {
       background-color: $white;
     }
@@ -190,10 +206,12 @@
       background-color: $primary;
     }
   }
+
   .button-prev {
     top: 347px;
     left: 34px;
   }
+
   .button-next {
     top: 347px;
     right: 34px;
