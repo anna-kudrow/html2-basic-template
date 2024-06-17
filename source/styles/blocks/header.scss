@@ -19,7 +19,8 @@
 
 .navigation {
   &__icon-link {
-    display: block;
+    background: none;
+    border: transparent;
     padding: 22px;
   }
 }
