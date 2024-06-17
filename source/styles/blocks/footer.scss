@@ -115,48 +115,6 @@
     color: $light-gray-text;
   }
 }
-// @media (max-width: 767px) {
-//   .footer__links-info:after {
-//     content: "";
-//     position: absolute;
-//     border-bottom: 1px solid $ligth-purple;
-//     width: 2500px;
-//     top: 61px;
-//     left: -300px;
-//     z-index: 1;
-//   }
-//   .info {
-//     &__shop::after {
-//       content: "";
-//       position: absolute;
-//       border-bottom: 1px solid $ligth-purple;
-//       width: 2500px;
-//       top: 207px;
-//       left: -300px;
-//       z-index: 1;
-//     }
-//     &__media::after {
-//       content: "";
-//       position: absolute;
-//       border-bottom: 1px solid $ligth-purple;
-//       width: 2500px;
-//       position: absolute;
-//       top: 182px;
-//       left: -300px;
-//       z-index: 1;
-//     }
-//     &__contacts::after {
-//       content: "";
-//       position: absolute;
-//       border-bottom: 1px solid $ligth-purple;
-//       width: 2500px;
-//       position: absolute;
-//       top: 150px;
-//       left: -300px;
-//       z-index: 1;
-//     }
-//   }
-// }
 
 @media (min-width: 768px) {
   .footer {
@@ -194,7 +152,7 @@
       padding: 0;
     }
     &__contacts {
-      padding: 0;
+      padding: 1px 0 0;
     }
   }
   .contact-item__address {
