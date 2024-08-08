@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* здесь используйте глобальные переменные */
+.catalog {
+  background-color: #f8f8f8;
+}
+.catalog__conteiner {
+  padding: 50px 20px 44px;
+}
+.catalog__inner {
+  max-width: 330px;
+  margin: 0 auto;
+}
+.catalog__small-title {
+  margin-bottom: 4px;
+}
+.catalog__bigger-title {
+  margin-bottom: 20px;
+}
+.catalog__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 44px;
+}
+.catalog__button {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  width: 280px;
+  padding: 8px 0;
+  border: transparent;
+  font-weight: 400;
+  font-family: "Montserrat";
+  border-radius: 4px;
+}
+.catalog__sort {
+  display: flex;
+  gap: 18px;
+  margin-left: 4px;
+}
+.catalog__filtres {
+  margin-bottom: 30px;
+}
+
+.sort__summary {
+  list-style-type: none;
+  color: #7859cf;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter__milk {
+  margin-bottom: 30px;
+}
+.filter__price {
+  margin-bottom: 31px;
+}
+.filter__price-windows {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+.filter__range-strip {
+  margin-bottom: 20px;
+}
+.filter__range-strip-tablet {
+  display: none;
+}
+.filter__range-strip-desktop {
+  display: none;
+}
+
+.price-window {
+  border: 2px solid #7859cf;
+  width: 120px;
+  padding: 8px 0;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.price-window--not-chosen {
+  color: #bdbdbd;
+}
+
+.milk-radio__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.milk-radio__item {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.milk-radio__item--not-available {
+  color: #bdbdbd;
+}
+
+.country-toggle__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.country-toggle__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.country-toggle__item--not-available {
+  color: #bdbdbd;
+}
+
+@media (min-width: 768px) {
+  .catalog__conteiner {
+    padding: 80px 20px 89px;
+  }
+  .catalog__bigger-title {
+    font-size: 42px;
+    line-height: 64px;
+  }
+  .catalog__inner {
+    max-width: 770px;
+  }
+  .catalog__filtres {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  .catalog__buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .catalog__button.button__accent {
+    width: 137px;
+  }
+  .catalog__button.button__non-accent {
+    width: 120px;
+  }
+  .catalog__sort {
+    justify-content: end;
+    margin-right: 10px;
+    gap: 21px;
+  }
+
+  .filter__range-strip {
+    display: none;
+  }
+  .filter__range-strip-tablet {
+    display: initial;
+    margin-bottom: 16px;
+  }
+  .filter__country {
+    margin-left: 11px;
+  }
+
+  .price-window {
+    width: 86px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog__filtres {
+    flex-direction: column;
+  }
+  .catalog__button.button__non-accent {
+    width: 149px;
+  }
+  .catalog__button.button__accent {
+    width: 149px;
+  }
+
+  .filter__range-strip-desktop {
+    display: initial;
+    margin-bottom: 18px;
+  }
+  .filter__range-strip-tablet {
+    display: none;
+  }
+  .filter__price-windows {
+    gap: 21px;
+  }
+  .filter__price {
+    margin: 0;
+  }
+  .filter__milk {
+    margin: 0;
+  }
+  .filter__country {
+    margin: 0;
+  }
+
+  .price-window {
+    width: 134px;
+  }
+
+  .logo__text {
+    padding-top: 2px;
+    min-width: 126px;
+  }
+}
